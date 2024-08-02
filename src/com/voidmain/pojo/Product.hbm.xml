@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Aug, 2023 4:39:08 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Product" table="PRODUCT">
+        <id name="pid" type="int">
+            <column name="PID" />
+            <generator class="increment"/>
+        </id>
+        <property name="blockid" type="int">
+            <column name="BLOCKID" />
+        </property>
+        <property name="wharehouse" type="java.lang.String">
+            <column name="WHAREHOUSE" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="quality" type="java.lang.String">
+            <column name="QUALITY" />
+        </property>
+        <property name="quantaty" type="java.lang.String">
+            <column name="QUANTATY" />
+        </property>
+        <property name="formername" type="java.lang.String">
+            <column name="FORMERNAME" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="assignedDate" type="java.lang.String">
+            <column name="ASSIGNEDDATE" />
+        </property>
+        <property name="releaseDate" type="java.lang.String">
+            <column name="RELEASEDATE" />
+        </property>
+        <property name="expDate" type="java.lang.String">
+            <column name="EXPDATE" />
+        </property>
+        <property name="temparature" type="java.lang.String">
+            <column name="TEMPARATURE" />
+        </property>
+        <property name="price" type="java.lang.String">
+            <column name="PRICE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="ismailsent" type="java.lang.String">
+            <column name="ISMAILSENT" />
+        </property>
+    </class>
+</hibernate-mapping>

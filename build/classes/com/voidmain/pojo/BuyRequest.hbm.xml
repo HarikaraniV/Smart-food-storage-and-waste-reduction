@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 17 Aug, 2023 1:57:07 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.BuyRequest" table="BUYREQUEST">
+        <id name="requestid" type="int">
+            <column name="REQUESTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="pid" type="int">
+            <column name="PID" />
+        </property>
+        <property name="userid" type="java.lang.String">
+            <column name="USERID" />
+        </property>
+        <property name="wharehouse" type="java.lang.String">
+            <column name="WHAREHOUSE" />
+        </property>
+        <property name="rdate" type="java.lang.String">
+            <column name="RDATE" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
